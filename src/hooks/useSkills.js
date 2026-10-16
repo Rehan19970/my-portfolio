@@ -10,15 +10,19 @@ export function useSkills() {
 
     async function fetch() {
       try {
+        console.log('🎯 Fetching skills...');
         const data = await getAllSkills();
+        console.log('✅ Skills data:', data);
+
         if (mounted) {
-          setSkills({
-            frontend: data.filter((s) => s.category === 'frontend'),
-            tools: data.filter((s) => s.category === 'tools'),
-          });
+          const frontend = data.filter((s) => s.category === 'frontend');
+          const tools = data.filter((s) => s.category === 'tools');
+          console.log('📊 Frontend:', frontend.length, '| Tools:', tools.length);
+
+          setSkills({ frontend, tools });
         }
       } catch (err) {
-        console.error('Skills fetch error:', err);
+        console.error('❌ Skills fetch error:', err);
       } finally {
         if (mounted) setLoading(false);
       }
