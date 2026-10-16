@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    width: 1200px;
+    height: 630px;
+    background: linear-gradient(135deg, #02050d 0%, #0a1a3a 100%);
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+  }
+  .glow {
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(34,229,255,.3), transparent 70%);
+    border-radius: 50%;
+  }
+  h1 {
+    font-size: 90px;
+    margin: 0 0 20px;
+    background: linear-gradient(90deg, #14f0ff, #8a86ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 900;
+  }
+  h2 {
+    font-size: 42px;
+    margin: 0 0 30px;
+    color: #fff;
+    font-weight: 300;
+  }
+  p {
+    font-size: 26px;
+    color: #a9bfdc;
+    margin: 0;
+    max-width: 800px;
+    line-height: 1.5;
+  }
+  .badge {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    font-size: 24px;
+    color: #22e5ff;
+    letter-spacing: 4px;
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="badge">PORTFOLIO</div>
+  <h1>Rehan</h1>
+  <h2>Web Developer</h2>
+  <p>I build modern, responsive and interactive web experiences that bring ideas to life.</p>
+</body>
+</html>

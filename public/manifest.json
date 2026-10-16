@@ -1,0 +1,17 @@
+{
+  "name": "Rehan | Web Developer",
+  "short_name": "Rehan",
+  "description": "Portfolio of Rehan — Web Developer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#02050d",
+  "theme_color": "#22e5ff",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
